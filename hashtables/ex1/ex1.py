@@ -1,8 +1,24 @@
 def get_indices_of_item_weights(weights, length, limit):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+# cache for indexing 
+
+    cache = {}
+#loop through the weights values and index them in the cache
+# cache[weights[i]] = i --> key:index
+
+    for i in range(length):
+        cache[weghts[i]] = i
+
+
+# loop through the weights, subtract current weight from the limit and then see if 2nd value is present in the dict, if it is, return the structured tuple or none
+
+    for j in range(length):
+        sec_val = limit-weights[j]
+
+        if sec_val in cache:
+            #return in the order (max(first val index, second val index), min("","")) j=first val, cache[second] --> sec index
+            return (max(j,cache[sec_val]),min(j, cache[sec_val]))
+
+
 
     return None
 
