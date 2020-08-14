@@ -16,3 +16,8 @@ def reconstruct_trip(tickets, length):
 
 # unsorted array of tickets, containing source and destination. Put the sequence in order, such that destination = source. Starting ticket has source None, ending ticket has destination None
 
+# create catch array to hold sorted
+# Find the starting ticket (source = none)
+# add the destination to the catch array 
+# find the next ticket where dest = source, push the destination 
+# repeat
