@@ -5,6 +5,11 @@ def has_negatives(a):
 #if it's in the cache, append the abs val to result
 #if not, then add it, you don't pre-pop cache, if the neg exists later, it will find the pos value in cache
 
+    for x in a: 
+        if -x in cache:
+            result.append(abs(x))
+        else:
+            cache[x] = x
 
     return result
 
