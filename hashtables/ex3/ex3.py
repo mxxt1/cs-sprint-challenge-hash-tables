@@ -17,8 +17,8 @@ def intersection(arrays):
         for j in arrays[i]:
             if j in cache:
                 cache[j] += 1
-            if cache[j] == len(arrays):
-                result.append(j)
+                if cache[j] == len(arrays):
+                    result.append(j)
 
 
     return result
