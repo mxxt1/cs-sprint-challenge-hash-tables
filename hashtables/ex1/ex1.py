@@ -6,7 +6,7 @@ def get_indices_of_item_weights(weights, length, limit):
 # cache[weights[i]] = i --> key:index
 
     for i in range(length):
-        cache[weghts[i]] = i
+        cache[weights[i]] = i
 
 
 # loop through the weights, subtract current weight from the limit and then see if 2nd value is present in the dict, if it is, return the structured tuple or none
